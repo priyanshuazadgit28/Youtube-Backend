@@ -2,16 +2,19 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "A simple backend for the application",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "javaScript",
     "backend",
     "node"
   ],
-  "author": "",
+  "author": "Priyanshu Azad",
   "license": "ISC",
-  "type": "commonjs"
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
