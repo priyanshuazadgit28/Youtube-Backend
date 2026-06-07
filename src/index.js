@@ -9,7 +9,17 @@ dotenv.config({
 
 (async () => {
   await connectDB();
+  then(() => {
+    app.listen(process.env.PORT, () => {
+      console.log(`App is listening on Port ${process.env.PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.log("Error in connecting to DB", error);
+    process.exit(1);
+  })
 })();
+
 
 /*
 import express from "express";
